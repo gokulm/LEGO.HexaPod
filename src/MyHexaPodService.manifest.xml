@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<!--This file was created with the Microsoft Visual Programming Language.-->
+<Manifest xmlns:user="http://schemas.microsoft.com/robotics/2007/07/lego/nxt/brick.user.html" xmlns:dssp="http://schemas.microsoft.com/xw/2004/10/dssp.html" xmlns:this="urn:uuid:24f847e5-ba30-48a9-a526-5dcfbdaaaf3f" xmlns:myhexapodservice="http://schemas.tempuri.org/2011/05/myhexapodservice.html" xmlns="http://schemas.microsoft.com/xw/2004/10/manifest.html">
+  <CreateServiceList>
+    <ServiceRecordType>
+      <dssp:Contract>http://schemas.tempuri.org/2011/05/myhexapodservice.html</dssp:Contract>
+      <dssp:PartnerList>
+        <dssp:Partner>
+          <dssp:Contract>http://schemas.microsoft.com/robotics/2007/07/lego/nxt/brick.user.html</dssp:Contract>
+          <dssp:PartnerList />
+          <dssp:Name>myhexapodservice:NxtBrick</dssp:Name>
+          <dssp:ServiceName>this:UserLegoNXTBrickv2</dssp:ServiceName>
+        </dssp:Partner>
+        <dssp:Partner>
+          <dssp:Contract>http://schemas.microsoft.com/robotics/2007/07/lego/nxt/motor.user.html</dssp:Contract>
+          <dssp:PartnerList />
+          <dssp:Name>myhexapodservice:NxtMotor</dssp:Name>
+          <dssp:ServiceName>this:UserLegoNXTMotorv2</dssp:ServiceName>
+        </dssp:Partner>
+        <dssp:Partner>
+          <dssp:Contract>http://schemas.microsoft.com/robotics/2007/07/lego/nxt/sonarsensor.user.html</dssp:Contract>
+          <dssp:PartnerList />
+          <dssp:Name>myhexapodservice:NxtUltrasonicSensor</dssp:Name>
+          <dssp:ServiceName>this:UserLegoNXTUltrasonicSensorv2</dssp:ServiceName>
+        </dssp:Partner>
+        <dssp:Partner>
+          <dssp:Contract>http://schemas.microsoft.com/robotics/2007/07/lego/nxt/touchsensor.user.html</dssp:Contract>
+          <dssp:PartnerList />
+          <dssp:Name>myhexapodservice:NxtTouchSensor1</dssp:Name>
+          <dssp:ServiceName>this:UserLegoNXTTouchSensorv2</dssp:ServiceName>
+        </dssp:Partner>
+        <dssp:Partner>
+          <dssp:Contract>http://schemas.microsoft.com/robotics/2007/07/lego/nxt/touchsensor.user.html</dssp:Contract>
+          <dssp:PartnerList />
+          <dssp:Name>myhexapodservice:NxtTouchSensor2</dssp:Name>
+          <dssp:ServiceName>this:UserLegoNXTTouchSensorv20</dssp:ServiceName>
+        </dssp:Partner>
+      </dssp:PartnerList>
+      <Name>this:MyHexaPodService</Name>
+    </ServiceRecordType>
+    <ServiceRecordType>
+      <dssp:Contract>http://schemas.microsoft.com/robotics/2007/07/lego/nxt/brick.user.html</dssp:Contract>
+      <dssp:PartnerList>
+        <dssp:Partner>
+          <dssp:Contract>http://schemas.microsoft.com/robotics/2007/07/lego/nxt/brick.user.html</dssp:Contract>
+          <dssp:Service>userlegonxtbrickv2.config.xml</dssp:Service>
+          <dssp:PartnerList />
+          <dssp:Name>dssp:StateService</dssp:Name>
+        </dssp:Partner>
+      </dssp:PartnerList>
+      <Name>this:UserLegoNXTBrickv2</Name>
+    </ServiceRecordType>
+    <ServiceRecordType>
+      <dssp:Contract>http://schemas.microsoft.com/robotics/2007/07/lego/nxt/motor.user.html</dssp:Contract>
+      <dssp:PartnerList>
+        <dssp:Partner>
+          <dssp:Contract>http://schemas.microsoft.com/robotics/2007/07/lego/nxt/motor.user.html</dssp:Contract>
+          <dssp:Service>userlegonxtmotorv2.config.xml</dssp:Service>
+          <dssp:PartnerList />
+          <dssp:Name>dssp:StateService</dssp:Name>
+        </dssp:Partner>
+        <dssp:Partner>
+          <dssp:Contract>http://schemas.microsoft.com/robotics/2007/07/lego/nxt/brick.user.html</dssp:Contract>
+          <dssp:PartnerList />
+          <dssp:Name xmlns:q1="http://schemas.microsoft.com/robotics/2007/07/lego/nxt/motor.user.html">q1:brick</dssp:Name>
+          <dssp:ServiceName>this:UserLegoNXTBrickv2</dssp:ServiceName>
+        </dssp:Partner>
+      </dssp:PartnerList>
+      <Name>this:UserLegoNXTMotorv2</Name>
+    </ServiceRecordType>
+    <ServiceRecordType>
+      <dssp:Contract>http://schemas.microsoft.com/robotics/2007/07/lego/nxt/sonarsensor.user.html</dssp:Contract>
+      <dssp:PartnerList>
+        <dssp:Partner>
+          <dssp:Contract>http://schemas.microsoft.com/robotics/2007/07/lego/nxt/sonarsensor.user.html</dssp:Contract>
+          <dssp:Service>userlegonxtultrasonicsensorv2.config.xml</dssp:Service>
+          <dssp:PartnerList />
+          <dssp:Name>dssp:StateService</dssp:Name>
+        </dssp:Partner>
+        <dssp:Partner>
+          <dssp:Contract>http://schemas.microsoft.com/robotics/2007/07/lego/nxt/brick.user.html</dssp:Contract>
+          <dssp:PartnerList />
+          <dssp:Name xmlns:q2="http://schemas.microsoft.com/robotics/2007/07/lego/nxt/sonarsensor.user.html">q2:brick</dssp:Name>
+          <dssp:ServiceName>this:UserLegoNXTBrickv2</dssp:ServiceName>
+        </dssp:Partner>
+      </dssp:PartnerList>
+      <Name>this:UserLegoNXTUltrasonicSensorv2</Name>
+    </ServiceRecordType>
+    <ServiceRecordType>
+      <dssp:Contract>http://schemas.microsoft.com/robotics/2007/07/lego/nxt/touchsensor.user.html</dssp:Contract>
+      <dssp:PartnerList>
+        <dssp:Partner>
+          <dssp:Contract>http://schemas.microsoft.com/robotics/2007/07/lego/nxt/touchsensor.user.html</dssp:Contract>
+          <dssp:Service>userlegonxttouchsensorv2.config.xml</dssp:Service>
+          <dssp:PartnerList />
+          <dssp:Name>dssp:StateService</dssp:Name>
+        </dssp:Partner>
+        <dssp:Partner>
+          <dssp:Contract>http://schemas.microsoft.com/robotics/2007/07/lego/nxt/brick.user.html</dssp:Contract>
+          <dssp:PartnerList />
+          <dssp:Name xmlns:q3="http://schemas.microsoft.com/robotics/2007/07/lego/nxt/touchsensor.user.html">q3:brick</dssp:Name>
+          <dssp:ServiceName>this:UserLegoNXTBrickv2</dssp:ServiceName>
+        </dssp:Partner>
+      </dssp:PartnerList>
+      <Name>this:UserLegoNXTTouchSensorv2</Name>
+    </ServiceRecordType>
+    <ServiceRecordType>
+      <dssp:Contract>http://schemas.microsoft.com/robotics/2007/07/lego/nxt/touchsensor.user.html</dssp:Contract>
+      <dssp:PartnerList>
+        <dssp:Partner>
+          <dssp:Contract>http://schemas.microsoft.com/robotics/2007/07/lego/nxt/touchsensor.user.html</dssp:Contract>
+          <dssp:Service>userlegonxttouchsensorv20.config.xml</dssp:Service>
+          <dssp:PartnerList />
+          <dssp:Name>dssp:StateService</dssp:Name>
+        </dssp:Partner>
+        <dssp:Partner>
+          <dssp:Contract>http://schemas.microsoft.com/robotics/2007/07/lego/nxt/brick.user.html</dssp:Contract>
+          <dssp:PartnerList />
+          <dssp:Name xmlns:q4="http://schemas.microsoft.com/robotics/2007/07/lego/nxt/touchsensor.user.html">q4:brick</dssp:Name>
+          <dssp:ServiceName>this:UserLegoNXTBrickv2</dssp:ServiceName>
+        </dssp:Partner>
+      </dssp:PartnerList>
+      <Name>this:UserLegoNXTTouchSensorv20</Name>
+    </ServiceRecordType>
+  </CreateServiceList>
+</Manifest>
